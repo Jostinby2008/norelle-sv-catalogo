@@ -85,21 +85,21 @@
         
         <div class="categories-grid">
             <a href="pages/catalogo.html?categoria=Mujer" class="category-card">
-                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1000&auto=format&fit=crop" alt="Mujer" class="category-image">
+                <img src="assets/img/products/vestido-elegante.jpg" alt="Mujer" class="category-image">
                 <div class="category-overlay">
                     <h3 class="category-name">Mujer</h3>
                 </div>
             </a>
             
             <a href="pages/catalogo.html?categoria=Hombre" class="category-card">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" alt="Hombre" class="category-image">
+                <img src="assets/img/products/sueter-hombre-tejido-grueso.jpg" alt="Hombre" class="category-image">
                 <div class="category-overlay">
                     <h3 class="category-name">Hombre</h3>
                 </div>
             </a>
             
             <a href="pages/catalogo.html?categoria=Unisex" class="category-card">
-                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1000&auto=format&fit=crop" alt="Unisex" class="category-image">
+                <img src="assets/img/products/chaqueta-bomber.jpg" alt="Unisex" class="category-image">
                 <div class="category-overlay">
                     <h3 class="category-name">Unisex</h3>
                 </div>
@@ -233,8 +233,8 @@
                             </button>
                         </div>
                         <div class="product-info">
-                            <p class="product-category">${product.category}</p>
-                            <h3 class="product-name">${product.name}</h3>
+                            <p class="product-category">${product.group || product.category}</p>
+                            <h3 class="product-name">${product.subcategory || product.name}</h3>
                             <p class="product-price">$${product.price.toFixed(2)}</p>
                         </div>
                     `;

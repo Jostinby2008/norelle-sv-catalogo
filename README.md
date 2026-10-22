@@ -18,9 +18,10 @@ No requiere instalación de dependencias: es un sitio estático.
 index.html            Inicio (hero editorial, categorías, destacados, marca)
 404.html              Página de error
 config.js             Configuración de la tienda (WhatsApp, contacto)
-data/products.json    Catálogo de productos
+data/products.json    Catálogo de productos (54 prendas reales del catálogo)
 assets/css/main.css   Estilos
 assets/js/app.js      Carrito, favoritos, menú móvil
+assets/img/products/  Fotos de producto extraídas de catalogo.pdf (600x800)
 pages/
   catalogo.html       Catálogo con filtros y orden
   categorias.html     Vista de categorías
@@ -85,6 +86,22 @@ Los precios provienen de la lista de referencia proporcionada:
 
 Los precios son de referencia y están sujetos a cambios. No se inventan tallas,
 colores ni inventario: cualquier detalle no confirmado se coordina por WhatsApp.
+
+## Catálogo
+
+Las 54 prendas provienen directamente de `catalogo.pdf` (9 categorías × 6 estilos):
+
+| Categoría                   | Estilos                                                                 |
+|-----------------------------|-------------------------------------------------------------------------|
+| Pantalones de Hombre        | Jeans Clásicos, De Vestir, Chino, Jogger, Cargo, Relaxed                |
+| Pantalones de Mujer         | Wide Leg, Jeans, Recto, Lino, Cargo, Leggings                           |
+| Camisetas                   | Lisa, Manga Corta, Estampada, Manga Larga, Oversize, Crop               |
+| Blusas                      | Clásica, Sin Mangas, Manga Larga, Estampada, Crop, Oversize             |
+| Suéteres de Mujer           | Cuello Redondo, Tejido, Cuello Alto, Cárdigan, Oversize, Con Botones    |
+| Suéteres de Hombre          | Cuello Redondo, Tejido Grueso, Cuello Alto, Cárdigan, Con Capucha, Zipper |
+| Chaquetas                   | Denim, Cuero, Bomber, Tela Ligera, Puffer, Oversize                     |
+| Camisetas Oversize de Mujer | Básica, Tye Dye, Estampada, Minimalista, Gráfica, Con Detalle           |
+| Vestidos                    | Casual, Estampado, Midi, Tirantes, Elegante, Suelto                     |
 
 ## Contacto
 

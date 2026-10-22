@@ -195,8 +195,8 @@
                 
                 document.getElementById('productImage').src = currentProduct.image;
                 document.getElementById('productImage').alt = currentProduct.name;
-                document.getElementById('productCategory').textContent = currentProduct.category;
-                document.getElementById('productName').textContent = currentProduct.name;
+                document.getElementById('productCategory').textContent = currentProduct.group || currentProduct.category;
+                document.getElementById('productName').textContent = currentProduct.subcategory || currentProduct.name;
                 document.getElementById('productPrice').textContent = '$' + currentProduct.price.toFixed(2);
                 document.getElementById('productDescription').textContent = currentProduct.description;
                 document.title = currentProduct.name + ' - Norelle Ropa';

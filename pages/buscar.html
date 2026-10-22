@@ -187,8 +187,8 @@
                         </button>
                     </div>
                     <div class="product-info">
-                        <p class="product-category">${product.category}</p>
-                        <h3 class="product-name">${product.name}</h3>
+                        <p class="product-category">${product.group || product.category}</p>
+                        <h3 class="product-name">${product.subcategory || product.name}</h3>
                         <p class="product-price">$${product.price.toFixed(2)}</p>
                     </div>
                 `;
