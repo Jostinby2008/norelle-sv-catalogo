@@ -152,6 +152,29 @@ function initMobileMenu() {
   }
 }
 
+// Load products: prefer embedded data (works with file:// and http://),
+// fall back to fetch() of the JSON if the embedded bundle is not present.
+function loadProducts() {
+  const isPages = /\/pages\//.test(window.location.pathname);
+  const prefix = isPages ? '../' : '';
+
+  function normalize(list) {
+    return list.map(function (p) {
+      if (p.image && !/^(https?:)?\/\//.test(p.image) && p.image.charAt(0) !== '.') {
+        // Strip a leading slash so the path resolves relative to the current page.
+        p.image = prefix + p.image.replace(/^\//, '');
+      }
+      return p;
+    });
+  }
+
+  if (window.NORELLE_PRODUCTS && Array.isArray(window.NORELLE_PRODUCTS)) {
+    return Promise.resolve(normalize(window.NORELLE_PRODUCTS));
+  }
+  const url = isPages ? '../data/products.json' : 'data/products.json';
+  return fetch(url).then(r => r.json()).then(normalize);
+}
+
 // Initialize on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();

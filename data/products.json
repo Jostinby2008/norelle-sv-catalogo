@@ -6,7 +6,7 @@
         "subcategory": "Jeans Clásicos",
         "group": "Pantalón de Hombre",
         "price": 15.99,
-        "image": "/assets/img/products/pantalon-hombre-jeans-clasicos.jpg",
+        "image": "assets/img/products/pantalon-hombre-jeans-clasicos.jpg",
         "description": "Pantalón de Hombre en estilo Jeans Clásicos. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -17,7 +17,7 @@
         "subcategory": "De Vestir",
         "group": "Pantalón de Hombre",
         "price": 15.99,
-        "image": "/assets/img/products/pantalon-hombre-de-vestir.jpg",
+        "image": "assets/img/products/pantalon-hombre-de-vestir.jpg",
         "description": "Pantalón de Hombre en estilo De Vestir. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -28,7 +28,7 @@
         "subcategory": "Chino",
         "group": "Pantalón de Hombre",
         "price": 15.99,
-        "image": "/assets/img/products/pantalon-hombre-chino.jpg",
+        "image": "assets/img/products/pantalon-hombre-chino.jpg",
         "description": "Pantalón de Hombre en estilo Chino. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -39,7 +39,7 @@
         "subcategory": "Jogger",
         "group": "Pantalón de Hombre",
         "price": 15.99,
-        "image": "/assets/img/products/pantalon-hombre-jogger.jpg",
+        "image": "assets/img/products/pantalon-hombre-jogger.jpg",
         "description": "Pantalón de Hombre en estilo Jogger. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -50,7 +50,7 @@
         "subcategory": "Cargo",
         "group": "Pantalón de Hombre",
         "price": 15.99,
-        "image": "/assets/img/products/pantalon-hombre-cargo.jpg",
+        "image": "assets/img/products/pantalon-hombre-cargo.jpg",
         "description": "Pantalón de Hombre en estilo Cargo. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -61,7 +61,7 @@
         "subcategory": "Relaxed",
         "group": "Pantalón de Hombre",
         "price": 15.99,
-        "image": "/assets/img/products/pantalon-hombre-relaxed.jpg",
+        "image": "assets/img/products/pantalon-hombre-relaxed.jpg",
         "description": "Pantalón de Hombre en estilo Relaxed. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -72,7 +72,7 @@
         "subcategory": "Wide Leg",
         "group": "Pantalón de Mujer",
         "price": 12.5,
-        "image": "/assets/img/products/pantalon-mujer-wide-leg.jpg",
+        "image": "assets/img/products/pantalon-mujer-wide-leg.jpg",
         "description": "Pantalón de Mujer en estilo Wide Leg. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -83,7 +83,7 @@
         "subcategory": "Jeans",
         "group": "Pantalón de Mujer",
         "price": 12.5,
-        "image": "/assets/img/products/pantalon-mujer-jeans.jpg",
+        "image": "assets/img/products/pantalon-mujer-jeans.jpg",
         "description": "Pantalón de Mujer en estilo Jeans. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -94,7 +94,7 @@
         "subcategory": "Recto",
         "group": "Pantalón de Mujer",
         "price": 12.5,
-        "image": "/assets/img/products/pantalon-mujer-recto.jpg",
+        "image": "assets/img/products/pantalon-mujer-recto.jpg",
         "description": "Pantalón de Mujer en estilo Recto. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -105,7 +105,7 @@
         "subcategory": "Lino",
         "group": "Pantalón de Mujer",
         "price": 12.5,
-        "image": "/assets/img/products/pantalon-mujer-lino.jpg",
+        "image": "assets/img/products/pantalon-mujer-lino.jpg",
         "description": "Pantalón de Mujer en estilo Lino. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -116,7 +116,7 @@
         "subcategory": "Cargo",
         "group": "Pantalón de Mujer",
         "price": 12.5,
-        "image": "/assets/img/products/pantalon-mujer-cargo.jpg",
+        "image": "assets/img/products/pantalon-mujer-cargo.jpg",
         "description": "Pantalón de Mujer en estilo Cargo. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -127,7 +127,7 @@
         "subcategory": "Leggings",
         "group": "Pantalón de Mujer",
         "price": 12.5,
-        "image": "/assets/img/products/pantalon-mujer-leggings.jpg",
+        "image": "assets/img/products/pantalon-mujer-leggings.jpg",
         "description": "Pantalón de Mujer en estilo Leggings. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -138,7 +138,7 @@
         "subcategory": "Lisa",
         "group": "Camisetas",
         "price": 10.85,
-        "image": "/assets/img/products/camiseta-lisa.jpg",
+        "image": "assets/img/products/camiseta-lisa.jpg",
         "description": "Camisetas en estilo Lisa. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -149,7 +149,7 @@
         "subcategory": "Manga Corta",
         "group": "Camisetas",
         "price": 10.85,
-        "image": "/assets/img/products/camiseta-manga-corta.jpg",
+        "image": "assets/img/products/camiseta-manga-corta.jpg",
         "description": "Camisetas en estilo Manga Corta. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -160,7 +160,7 @@
         "subcategory": "Estampada",
         "group": "Camisetas",
         "price": 10.85,
-        "image": "/assets/img/products/camiseta-estampada.jpg",
+        "image": "assets/img/products/camiseta-estampada.jpg",
         "description": "Camisetas en estilo Estampada. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -171,7 +171,7 @@
         "subcategory": "Manga Larga",
         "group": "Camisetas",
         "price": 10.85,
-        "image": "/assets/img/products/camiseta-manga-larga.jpg",
+        "image": "assets/img/products/camiseta-manga-larga.jpg",
         "description": "Camisetas en estilo Manga Larga. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -182,7 +182,7 @@
         "subcategory": "Oversize",
         "group": "Camisetas",
         "price": 10.85,
-        "image": "/assets/img/products/camiseta-oversize.jpg",
+        "image": "assets/img/products/camiseta-oversize.jpg",
         "description": "Camisetas en estilo Oversize. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -193,7 +193,7 @@
         "subcategory": "Crop",
         "group": "Camisetas",
         "price": 10.85,
-        "image": "/assets/img/products/camiseta-crop.jpg",
+        "image": "assets/img/products/camiseta-crop.jpg",
         "description": "Camisetas en estilo Crop. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -204,7 +204,7 @@
         "subcategory": "Clásica",
         "group": "Blusas",
         "price": 9.99,
-        "image": "/assets/img/products/blusa-clasica.jpg",
+        "image": "assets/img/products/blusa-clasica.jpg",
         "description": "Blusas en estilo Clásica. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -215,7 +215,7 @@
         "subcategory": "Sin Mangas",
         "group": "Blusas",
         "price": 9.99,
-        "image": "/assets/img/products/blusa-sin-mangas.jpg",
+        "image": "assets/img/products/blusa-sin-mangas.jpg",
         "description": "Blusas en estilo Sin Mangas. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -226,7 +226,7 @@
         "subcategory": "Manga Larga",
         "group": "Blusas",
         "price": 9.99,
-        "image": "/assets/img/products/blusa-manga-larga.jpg",
+        "image": "assets/img/products/blusa-manga-larga.jpg",
         "description": "Blusas en estilo Manga Larga. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -237,7 +237,7 @@
         "subcategory": "Estampada",
         "group": "Blusas",
         "price": 9.99,
-        "image": "/assets/img/products/blusa-estampada.jpg",
+        "image": "assets/img/products/blusa-estampada.jpg",
         "description": "Blusas en estilo Estampada. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -248,7 +248,7 @@
         "subcategory": "Crop",
         "group": "Blusas",
         "price": 9.99,
-        "image": "/assets/img/products/blusa-crop.jpg",
+        "image": "assets/img/products/blusa-crop.jpg",
         "description": "Blusas en estilo Crop. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -259,7 +259,7 @@
         "subcategory": "Oversize",
         "group": "Blusas",
         "price": 9.99,
-        "image": "/assets/img/products/blusa-oversize.jpg",
+        "image": "assets/img/products/blusa-oversize.jpg",
         "description": "Blusas en estilo Oversize. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -270,7 +270,7 @@
         "subcategory": "Cuello Redondo",
         "group": "Suéter de Mujer",
         "price": 10.99,
-        "image": "/assets/img/products/sueter-mujer-cuello-redondo.jpg",
+        "image": "assets/img/products/sueter-mujer-cuello-redondo.jpg",
         "description": "Suéter de Mujer en estilo Cuello Redondo. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -281,7 +281,7 @@
         "subcategory": "Tejido",
         "group": "Suéter de Mujer",
         "price": 10.99,
-        "image": "/assets/img/products/sueter-mujer-tejido.jpg",
+        "image": "assets/img/products/sueter-mujer-tejido.jpg",
         "description": "Suéter de Mujer en estilo Tejido. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -292,7 +292,7 @@
         "subcategory": "Cuello Alto",
         "group": "Suéter de Mujer",
         "price": 10.99,
-        "image": "/assets/img/products/sueter-mujer-cuello-alto.jpg",
+        "image": "assets/img/products/sueter-mujer-cuello-alto.jpg",
         "description": "Suéter de Mujer en estilo Cuello Alto. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -303,7 +303,7 @@
         "subcategory": "Cárdigan",
         "group": "Suéter de Mujer",
         "price": 10.99,
-        "image": "/assets/img/products/sueter-mujer-cardigan.jpg",
+        "image": "assets/img/products/sueter-mujer-cardigan.jpg",
         "description": "Suéter de Mujer en estilo Cárdigan. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -314,7 +314,7 @@
         "subcategory": "Oversize",
         "group": "Suéter de Mujer",
         "price": 10.99,
-        "image": "/assets/img/products/sueter-mujer-oversize.jpg",
+        "image": "assets/img/products/sueter-mujer-oversize.jpg",
         "description": "Suéter de Mujer en estilo Oversize. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -325,7 +325,7 @@
         "subcategory": "Con Botones",
         "group": "Suéter de Mujer",
         "price": 10.99,
-        "image": "/assets/img/products/sueter-mujer-con-botones.jpg",
+        "image": "assets/img/products/sueter-mujer-con-botones.jpg",
         "description": "Suéter de Mujer en estilo Con Botones. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -336,7 +336,7 @@
         "subcategory": "Cuello Redondo",
         "group": "Suéter de Hombre",
         "price": 10.99,
-        "image": "/assets/img/products/sueter-hombre-cuello-redondo.jpg",
+        "image": "assets/img/products/sueter-hombre-cuello-redondo.jpg",
         "description": "Suéter de Hombre en estilo Cuello Redondo. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -347,7 +347,7 @@
         "subcategory": "Tejido Grueso",
         "group": "Suéter de Hombre",
         "price": 10.99,
-        "image": "/assets/img/products/sueter-hombre-tejido-grueso.jpg",
+        "image": "assets/img/products/sueter-hombre-tejido-grueso.jpg",
         "description": "Suéter de Hombre en estilo Tejido Grueso. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -358,7 +358,7 @@
         "subcategory": "Cuello Alto",
         "group": "Suéter de Hombre",
         "price": 10.99,
-        "image": "/assets/img/products/sueter-hombre-cuello-alto.jpg",
+        "image": "assets/img/products/sueter-hombre-cuello-alto.jpg",
         "description": "Suéter de Hombre en estilo Cuello Alto. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -369,7 +369,7 @@
         "subcategory": "Cárdigan",
         "group": "Suéter de Hombre",
         "price": 10.99,
-        "image": "/assets/img/products/sueter-hombre-cardigan.jpg",
+        "image": "assets/img/products/sueter-hombre-cardigan.jpg",
         "description": "Suéter de Hombre en estilo Cárdigan. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -380,7 +380,7 @@
         "subcategory": "Con Capucha",
         "group": "Suéter de Hombre",
         "price": 10.99,
-        "image": "/assets/img/products/sueter-hombre-con-capucha.jpg",
+        "image": "assets/img/products/sueter-hombre-con-capucha.jpg",
         "description": "Suéter de Hombre en estilo Con Capucha. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -391,7 +391,7 @@
         "subcategory": "Zipper",
         "group": "Suéter de Hombre",
         "price": 10.99,
-        "image": "/assets/img/products/sueter-hombre-zipper.jpg",
+        "image": "assets/img/products/sueter-hombre-zipper.jpg",
         "description": "Suéter de Hombre en estilo Zipper. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -402,7 +402,7 @@
         "subcategory": "Denim",
         "group": "Chaquetas",
         "price": 12,
-        "image": "/assets/img/products/chaqueta-denim.jpg",
+        "image": "assets/img/products/chaqueta-denim.jpg",
         "description": "Chaquetas en estilo Denim. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -413,7 +413,7 @@
         "subcategory": "Cuero",
         "group": "Chaquetas",
         "price": 12,
-        "image": "/assets/img/products/chaqueta-cuero.jpg",
+        "image": "assets/img/products/chaqueta-cuero.jpg",
         "description": "Chaquetas en estilo Cuero. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -424,7 +424,7 @@
         "subcategory": "Bomber",
         "group": "Chaquetas",
         "price": 12,
-        "image": "/assets/img/products/chaqueta-bomber.jpg",
+        "image": "assets/img/products/chaqueta-bomber.jpg",
         "description": "Chaquetas en estilo Bomber. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -435,7 +435,7 @@
         "subcategory": "Tela Ligera",
         "group": "Chaquetas",
         "price": 12,
-        "image": "/assets/img/products/chaqueta-tela-ligera.jpg",
+        "image": "assets/img/products/chaqueta-tela-ligera.jpg",
         "description": "Chaquetas en estilo Tela Ligera. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -446,7 +446,7 @@
         "subcategory": "Puffer",
         "group": "Chaquetas",
         "price": 12,
-        "image": "/assets/img/products/chaqueta-puffer.jpg",
+        "image": "assets/img/products/chaqueta-puffer.jpg",
         "description": "Chaquetas en estilo Puffer. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -457,7 +457,7 @@
         "subcategory": "Oversize",
         "group": "Chaquetas",
         "price": 12,
-        "image": "/assets/img/products/chaqueta-oversize.jpg",
+        "image": "assets/img/products/chaqueta-oversize.jpg",
         "description": "Chaquetas en estilo Oversize. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -468,7 +468,7 @@
         "subcategory": "Básica",
         "group": "Camisetas Oversize de Mujer",
         "price": 8.99,
-        "image": "/assets/img/products/camiseta-oversize-mujer-basica.jpg",
+        "image": "assets/img/products/camiseta-oversize-mujer-basica.jpg",
         "description": "Camisetas Oversize de Mujer en estilo Básica. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -479,7 +479,7 @@
         "subcategory": "Tye Dye",
         "group": "Camisetas Oversize de Mujer",
         "price": 8.99,
-        "image": "/assets/img/products/camiseta-oversize-mujer-tye-dye.jpg",
+        "image": "assets/img/products/camiseta-oversize-mujer-tye-dye.jpg",
         "description": "Camisetas Oversize de Mujer en estilo Tye Dye. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -490,7 +490,7 @@
         "subcategory": "Estampada",
         "group": "Camisetas Oversize de Mujer",
         "price": 8.99,
-        "image": "/assets/img/products/camiseta-oversize-mujer-estampada.jpg",
+        "image": "assets/img/products/camiseta-oversize-mujer-estampada.jpg",
         "description": "Camisetas Oversize de Mujer en estilo Estampada. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -501,7 +501,7 @@
         "subcategory": "Minimalista",
         "group": "Camisetas Oversize de Mujer",
         "price": 8.99,
-        "image": "/assets/img/products/camiseta-oversize-mujer-minimalista.jpg",
+        "image": "assets/img/products/camiseta-oversize-mujer-minimalista.jpg",
         "description": "Camisetas Oversize de Mujer en estilo Minimalista. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -512,7 +512,7 @@
         "subcategory": "Gráfica",
         "group": "Camisetas Oversize de Mujer",
         "price": 8.99,
-        "image": "/assets/img/products/camiseta-oversize-mujer-grafica.jpg",
+        "image": "assets/img/products/camiseta-oversize-mujer-grafica.jpg",
         "description": "Camisetas Oversize de Mujer en estilo Gráfica. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -523,7 +523,7 @@
         "subcategory": "Con Detalle",
         "group": "Camisetas Oversize de Mujer",
         "price": 8.99,
-        "image": "/assets/img/products/camiseta-oversize-mujer-con-detalle.jpg",
+        "image": "assets/img/products/camiseta-oversize-mujer-con-detalle.jpg",
         "description": "Camisetas Oversize de Mujer en estilo Con Detalle. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -534,7 +534,7 @@
         "subcategory": "Casual",
         "group": "Vestidos",
         "price": 10.5,
-        "image": "/assets/img/products/vestido-casual.jpg",
+        "image": "assets/img/products/vestido-casual.jpg",
         "description": "Vestidos en estilo Casual. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -545,7 +545,7 @@
         "subcategory": "Estampado",
         "group": "Vestidos",
         "price": 10.5,
-        "image": "/assets/img/products/vestido-estampado.jpg",
+        "image": "assets/img/products/vestido-estampado.jpg",
         "description": "Vestidos en estilo Estampado. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -556,7 +556,7 @@
         "subcategory": "Midi",
         "group": "Vestidos",
         "price": 10.5,
-        "image": "/assets/img/products/vestido-midi.jpg",
+        "image": "assets/img/products/vestido-midi.jpg",
         "description": "Vestidos en estilo Midi. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -567,7 +567,7 @@
         "subcategory": "Tirantes",
         "group": "Vestidos",
         "price": 10.5,
-        "image": "/assets/img/products/vestido-tirantes.jpg",
+        "image": "assets/img/products/vestido-tirantes.jpg",
         "description": "Vestidos en estilo Tirantes. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -578,7 +578,7 @@
         "subcategory": "Elegante",
         "group": "Vestidos",
         "price": 10.5,
-        "image": "/assets/img/products/vestido-elegante.jpg",
+        "image": "assets/img/products/vestido-elegante.jpg",
         "description": "Vestidos en estilo Elegante. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     },
@@ -589,7 +589,7 @@
         "subcategory": "Suelto",
         "group": "Vestidos",
         "price": 10.5,
-        "image": "/assets/img/products/vestido-suelto.jpg",
+        "image": "assets/img/products/vestido-suelto.jpg",
         "description": "Vestidos en estilo Suelto. Prenda versátil y cómoda de la colección Norelle.",
         "badge": null
     }

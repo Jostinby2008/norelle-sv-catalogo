@@ -211,11 +211,11 @@
     </a>
 
     <script src="config.js"></script>
+    <script src="assets/js/products-data.js"></script>
     <script src="assets/js/app.js"></script>
     <script>
         // Load featured products
-        fetch('data/products.json')
-            .then(response => response.json())
+        loadProducts()
             .then(products => {
                 const featuredContainer = document.getElementById('featured-products');
                 // Show first 6 products

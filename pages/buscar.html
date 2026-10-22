@@ -132,12 +132,12 @@
     </a>
 
     <script src="../config.js"></script>
+    <script src="../assets/js/products-data.js"></script>
     <script src="../assets/js/app.js"></script>
     <script>
         let allProducts = [];
 
-        fetch('../data/products.json')
-            .then(response => response.json())
+        loadProducts()
             .then(products => {
                 allProducts = products;
                 // Check for query parameter

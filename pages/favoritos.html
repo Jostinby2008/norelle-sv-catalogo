@@ -133,6 +133,7 @@
     </a>
 
     <script src="../config.js"></script>
+    <script src="../assets/js/products-data.js"></script>
     <script src="../assets/js/app.js"></script>
     <script>
         function getFavorites() {
@@ -158,8 +159,7 @@
             emptyEl.style.display = 'none';
             gridEl.style.display = 'grid';
             
-            fetch('../data/products.json')
-                .then(r => r.json())
+            loadProducts()
                 .then(products => {
                     gridEl.innerHTML = '';
                     favorites.forEach(id => {
@@ -168,7 +168,7 @@
                             const card = document.createElement('a');
                             card.href = `producto.html?id=${product.id}`;
                             card.className = 'product-card';
-                            const isFav = favorites.has(product.id);
+                            const isFav = favorites.includes(product.id);
                             card.innerHTML = `
                                 <div class="product-image-container">
                                     <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">

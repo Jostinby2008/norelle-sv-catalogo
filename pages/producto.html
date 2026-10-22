@@ -166,6 +166,7 @@
     </a>
 
     <script src="../config.js"></script>
+    <script src="../assets/js/products-data.js"></script>
     <script src="../assets/js/app.js"></script>
     <script>
         let currentProduct = null;
@@ -176,8 +177,7 @@
             return params.get('id');
         }
 
-        fetch('../data/products.json')
-            .then(response => response.json())
+        loadProducts()
             .then(products => {
                 const productId = getProductId();
                 currentProduct = products.find(p => p.id === productId);
