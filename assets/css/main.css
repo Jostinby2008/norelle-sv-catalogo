@@ -96,8 +96,11 @@ h6 { font-size: 1.1rem; }
 }
 
 .logo img {
-  height: 48px;
+  height: 46px;
   width: auto;
+  max-width: 46px;
+  object-fit: contain;
+  display: block;
 }
 
 .nav {
@@ -492,7 +495,10 @@ h6 { font-size: 1.1rem; }
 }
 
 .brand-logo {
-  height: 80px;
+  height: 90px;
+  width: auto;
+  max-width: 60px;
+  object-fit: contain;
   margin-bottom: 2rem;
 }
 
