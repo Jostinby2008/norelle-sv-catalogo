@@ -1,0 +1,14 @@
+{
+  "name": "norelle-ropa",
+  "version": "1.0.0",
+  "description": "Tienda online Norelle Ropa - Boutique premium de moda",
+  "private": true,
+  "scripts": {
+    "serve:php": "php -S localhost:8080 -t .",
+    "serve:python": "python -m http.server 8080",
+    "serve:npx": "npx http-server . -p 8080"
+  },
+  "keywords": ["ropa", "moda", "boutique", "tienda", "ecommerce"],
+  "author": "Jostinby2008",
+  "license": "MIT"
+}

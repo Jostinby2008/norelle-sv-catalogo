@@ -28,3 +28,7 @@ desktop.ini
 # PDF and temp
 *.tmp
 ~$*
+
+# Environment
+.env
+.env.local

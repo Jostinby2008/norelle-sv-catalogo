@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Norelle Ropa</title>
+    <meta name="description" content="Detalle de producto - Norelle Ropa">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/png" href="../logo2.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <img src="../logo2.png" alt="Norelle Ropa Logo">
+                <span>Norelle Ropa</span>
+            </a>
+            
+            <nav>
+                <ul class="nav">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                    <li><a href="categorias.html" class="nav-link">Categorías</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="buscar.html" class="action-btn" aria-label="Buscar">
+                    <i class="bi bi-search" style="font-size: 1.1rem;"></i>
+                </a>
+                <a href="favoritos.html" class="action-btn" aria-label="Favoritos">
+                    <i class="bi bi-heart" style="font-size: 1.1rem;"></i>
+                </a>
+                <a href="carrito.html" class="action-btn" aria-label="Carrito">
+                    <i class="bi bi-bag" style="font-size: 1.1rem;"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Menú">
+                    <i class="bi bi-list" style="font-size: 1.5rem;"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail -->
+    <section class="section" style="padding-top: 40px;">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                <div>
+                    <div style="aspect-ratio: 3/4; background: var(--bg-accent); overflow: hidden;">
+                        <img id="productImage" src="" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                
+                <div>
+                    <p id="productCategory" style="font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-dusty); margin-bottom: 1rem;"></p>
+                    <h1 id="productName" style="font-size: 2.5rem; margin-bottom: 1rem;"></h1>
+                    <p id="productPrice" style="font-size: 1.8rem; color: var(--text-secondary); margin-bottom: 2rem; font-weight: 500;"></p>
+                    
+                    <p id="productDescription" style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem;"></p>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <p style="margin-bottom: 0.75rem; font-weight: 500;">Cantidad</p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <button onclick="decreaseQuantity()" style="width: 40px; height: 40px; border: 1px solid var(--border); background: var(--white); cursor: pointer;">-</button>
+                            <span id="quantity" style="min-width: 40px; text-align: center;">1</span>
+                            <button onclick="increaseQuantity()" style="width: 40px; height: 40px; border: 1px solid var(--border); background: var(--white); cursor: pointer;">+</button>
+                        </div>
+                    </div>
+                    
+                    <button onclick="addToCart()" class="btn-primary" style="width: 100%; justify-content: center; margin-bottom: 1rem;">
+                        <i class="bi bi-bag-plus"></i>
+                        Agregar al Carrito
+                    </button>
+                    
+                    <button onclick="buyNow()" class="btn-outline" style="width: 100%; justify-content: center;">
+                        <i class="bi bi-whatsapp"></i>
+                        Comprar por WhatsApp
+                    </button>
+                    
+                    <button onclick="toggleFavorite()" id="favBtn" class="btn-outline" style="width: 100%; justify-content: center; margin-top: 1rem;">
+                        <i class="bi bi-heart" id="favIcon"></i>
+                        <span id="favLabel">Guardar en favoritos</span>
+                    </button>
+                    
+                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
+                            <strong>Información:</strong> Los precios mostrados son los precios de referencia. 
+                            Para confirmar disponibilidad y realizar tu pedido, contáctanos por WhatsApp.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    <img src="../logo2.png" alt="Norelle Ropa">
+                    <span>Norelle Ropa</span>
+                </a>
+                <p class="footer-description">
+                    Boutique premium de moda. Tu estilo, tu esencia.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/norelle.sv" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <i class="bi bi-instagram" style="font-size: 1.3rem;"></i>
+                    </a>
+                    <a href="mailto:norelle.sv@gmail.com" class="social-link" aria-label="Email">
+                        <i class="bi bi-envelope" style="font-size: 1.3rem;"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="footer-heading">Tienda</h4>
+                <ul class="footer-links">
+                    <li><a href="catalogo.html" class="footer-link">Catálogo</a></li>
+                    <li><a href="categorias.html" class="footer-link">Categorías</a></li>
+                    <li><a href="carrito.html" class="footer-link">Carrito</a></li>
+                    <li><a href="buscar.html" class="footer-link">Buscar</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="footer-heading">Información</h4>
+                <ul class="footer-links">
+                    <li><a href="nosotros.html" class="footer-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+                    <li><a href="faq.html" class="footer-link">Preguntas Frecuentes</a></li>
+                    <li><a href="politicas.html" class="footer-link">Políticas</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="footer-heading">Contacto</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:norelle.sv@gmail.com" class="footer-link">norelle.sv@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/norelle.sv" target="_blank" rel="noopener noreferrer" class="footer-link">@norelle.sv</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Norelle Ropa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="#" data-whatsapp="1" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-whatsapp" 
+       aria-label="Contactar por WhatsApp">
+        <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+    </a>
+
+    <script src="../config.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script>
+        let currentProduct = null;
+        let quantity = 1;
+
+        function getProductId() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
+        }
+
+        fetch('../data/products.json')
+            .then(response => response.json())
+            .then(products => {
+                const productId = getProductId();
+                currentProduct = products.find(p => p.id === productId);
+                
+                if (!currentProduct) {
+                    document.querySelector('.section').innerHTML = `
+                        <div style="text-align: center; padding: 4rem 2rem;">
+                            <h2 style="margin-bottom: 1rem;">Producto no encontrado</h2>
+                            <p style="color: var(--text-secondary); margin-bottom: 2rem;">El producto que buscas no existe o ha sido removido.</p>
+                            <a href="catalogo.html" class="btn-primary">Volver al Catálogo</a>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                document.getElementById('productImage').src = currentProduct.image;
+                document.getElementById('productImage').alt = currentProduct.name;
+                document.getElementById('productCategory').textContent = currentProduct.category;
+                document.getElementById('productName').textContent = currentProduct.name;
+                document.getElementById('productPrice').textContent = '$' + currentProduct.price.toFixed(2);
+                document.getElementById('productDescription').textContent = currentProduct.description;
+                document.title = currentProduct.name + ' - Norelle Ropa';
+                
+                // Reflect favorite state
+                if (favorites.has(currentProduct.id)) {
+                    document.getElementById('favIcon').className = 'bi bi-heart-fill';
+                    document.getElementById('favLabel').textContent = 'En tus favoritos';
+                }
+            });
+
+        function increaseQuantity() {
+            quantity++;
+            document.getElementById('quantity').textContent = quantity;
+        }
+
+        function decreaseQuantity() {
+            if (quantity > 1) {
+                quantity--;
+                document.getElementById('quantity').textContent = quantity;
+            }
+        }
+
+        function addToCart() {
+            if (!currentProduct) return;
+            cart.addItem(currentProduct, quantity);
+            alert('Producto agregado al carrito');
+        }
+
+        function buyNow() {
+            if (!currentProduct) return;
+            const total = (currentProduct.price * quantity).toFixed(2);
+            const message = `Hola! Me gustaría comprar:\n\n${currentProduct.name}\nCantidad: ${quantity}\nPrecio unitario: $${currentProduct.price.toFixed(2)}\nTotal: $${total}\n\nPor favor, ¿podrían confirmarme disponibilidad?`;
+            window.openWhatsApp(message);
+        }
+
+        function toggleFavorite() {
+            if (!currentProduct) return;
+            const isFav = favorites.toggle(currentProduct.id);
+            document.getElementById('favIcon').className = isFav ? 'bi bi-heart-fill' : 'bi bi-heart';
+            document.getElementById('favLabel').textContent = isFav ? 'En tus favoritos' : 'Guardar en favoritos';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Norelle Ropa</title>
+    <meta name="description" content="Catálogo completo de Norelle Ropa - Todas nuestras prendas disponibles.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/png" href="../logo2.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <img src="../logo2.png" alt="Norelle Ropa Logo">
+                <span>Norelle Ropa</span>
+            </a>
+            
+            <nav>
+                <ul class="nav">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                    <li><a href="categorias.html" class="nav-link">Categorías</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="buscar.html" class="action-btn" aria-label="Buscar">
+                    <i class="bi bi-search" style="font-size: 1.1rem;"></i>
+                </a>
+                <a href="favoritos.html" class="action-btn" aria-label="Favoritos">
+                    <i class="bi bi-heart" style="font-size: 1.1rem;"></i>
+                </a>
+                <a href="carrito.html" class="action-btn" aria-label="Carrito">
+                    <i class="bi bi-bag" style="font-size: 1.1rem;"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Menú">
+                    <i class="bi bi-list" style="font-size: 1.5rem;"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section style="padding: 60px 2rem 40px; background: var(--bg-secondary); text-align: center;">
+        <div class="container">
+            <p style="font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-dusty); margin-bottom: 1rem;">Colección</p>
+            <h1 style="font-size: 2.8rem; margin-bottom: 1rem;">Nuestro Catálogo</h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Descubre todas nuestras piezas cuidadosamente seleccionadas</p>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="section">
+        <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; justify-content: space-between; margin-bottom: 2.5rem;">
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button onclick="filterProducts('all')" class="filter-btn active" data-filter="all" style="padding: 8px 20px; background: var(--text-primary); color: var(--white); border: 1px solid var(--text-primary); cursor: pointer; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase;">Todos</button>
+                <button onclick="filterProducts('Mujer')" class="filter-btn" data-filter="Mujer" style="padding: 8px 20px; background: transparent; color: var(--text-primary); border: 1px solid var(--border); cursor: pointer; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase;">Mujer</button>
+                <button onclick="filterProducts('Hombre')" class="filter-btn" data-filter="Hombre" style="padding: 8px 20px; background: transparent; color: var(--text-primary); border: 1px solid var(--border); cursor: pointer; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase;">Hombre</button>
+                <button onclick="filterProducts('Unisex')" class="filter-btn" data-filter="Unisex" style="padding: 8px 20px; background: transparent; color: var(--text-primary); border: 1px solid var(--border); cursor: pointer; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase;">Unisex</button>
+            </div>
+            <div>
+                <select id="sortSelect" onchange="sortProducts()" style="padding: 10px 20px; border: 1px solid var(--border); background: var(--white); color: var(--text-primary); font-family: 'Inter', sans-serif;">
+                    <option value="default">Ordenar por</option>
+                    <option value="price-asc">Precio: Menor a Mayor</option>
+                    <option value="price-desc">Precio: Mayor a Menor</option>
+                    <option value="name-asc">Nombre: A-Z</option>
+                    <option value="name-desc">Nombre: Z-A</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+            <!-- Products will be loaded by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    <img src="../logo2.png" alt="Norelle Ropa">
+                    <span>Norelle Ropa</span>
+                </a>
+                <p class="footer-description">
+                    Boutique premium de moda. Tu estilo, tu esencia.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/norelle.sv" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <i class="bi bi-instagram" style="font-size: 1.3rem;"></i>
+                    </a>
+                    <a href="mailto:norelle.sv@gmail.com" class="social-link" aria-label="Email">
+                        <i class="bi bi-envelope" style="font-size: 1.3rem;"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="footer-heading">Tienda</h4>
+                <ul class="footer-links">
+                    <li><a href="catalogo.html" class="footer-link">Catálogo</a></li>
+                    <li><a href="categorias.html" class="footer-link">Categorías</a></li>
+                    <li><a href="carrito.html" class="footer-link">Carrito</a></li>
+                    <li><a href="buscar.html" class="footer-link">Buscar</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="footer-heading">Información</h4>
+                <ul class="footer-links">
+                    <li><a href="nosotros.html" class="footer-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+                    <li><a href="faq.html" class="footer-link">Preguntas Frecuentes</a></li>
+                    <li><a href="politicas.html" class="footer-link">Políticas</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="footer-heading">Contacto</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:norelle.sv@gmail.com" class="footer-link">norelle.sv@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/norelle.sv" target="_blank" rel="noopener noreferrer" class="footer-link">@norelle.sv</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Norelle Ropa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="#" data-whatsapp="1" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-whatsapp" 
+       aria-label="Contactar por WhatsApp">
+        <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+    </a>
+
+    <script src="../config.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script>
+        let allProducts = [];
+        let currentFilter = 'all';
+        let currentSort = 'default';
+
+        fetch('../data/products.json')
+            .then(response => response.json())
+            .then(products => {
+                allProducts = products;
+                
+                // Read category from URL query param (e.g. ?categoria=Mujer)
+                const params = new URLSearchParams(window.location.search);
+                const cat = params.get('categoria');
+                if (cat && ['Mujer', 'Hombre', 'Unisex'].includes(cat)) {
+                    setActiveFilterButton(cat);
+                    currentFilter = cat;
+                    applyFiltersAndSort();
+                } else {
+                    displayProducts(products);
+                }
+            });
+
+        function setActiveFilterButton(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                const isActive = btn.dataset.filter === category;
+                btn.style.background = isActive ? 'var(--text-primary)' : 'transparent';
+                btn.style.color = isActive ? 'var(--white)' : 'var(--text-primary)';
+                btn.style.borderColor = isActive ? 'var(--text-primary)' : 'var(--border)';
+            });
+        }
+
+        function displayProducts(products) {
+            const grid = document.getElementById('products-grid');
+            grid.innerHTML = '';
+            
+            if (products.length === 0) {
+                grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 2rem;">No hay productos disponibles</p>';
+                return;
+            }
+            
+            products.forEach(product => {
+                const productCard = document.createElement('a');
+                productCard.href = `producto.html?id=${product.id}`;
+                productCard.className = 'product-card';
+                productCard.innerHTML = `
+                    <div class="product-image-container">
+                        <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+                        ${product.badge ? `<span class="product-badge">${product.badge}</span>` : ''}
+                        <button class="fav-toggle ${favorites.has(product.id) ? 'is-fav' : ''}" data-id="${product.id}" aria-label="Guardar en favoritos" title="Guardar en favoritos" onclick="onFavClick(event, this)">
+                            <i class="bi ${favorites.has(product.id) ? 'bi-heart-fill' : 'bi-heart'}"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">${product.category}</p>
+                        <h3 class="product-name">${product.name}</h3>
+                        <p class="product-price">$${product.price.toFixed(2)}</p>
+                    </div>
+                `;
+                grid.appendChild(productCard);
+            });
+        }
+
+        function onFavClick(event, btn) {
+            event.preventDefault();
+            event.stopPropagation();
+            const id = btn.dataset.id;
+            const isFav = favorites.toggle(id);
+            btn.classList.toggle('is-fav', isFav);
+            btn.querySelector('i').className = isFav ? 'bi bi-heart-fill' : 'bi bi-heart';
+        }
+
+        function filterProducts(category) {
+            currentFilter = category;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.background = 'transparent';
+                btn.style.color = 'var(--text-primary)';
+                btn.style.borderColor = 'var(--border)';
+            });
+            event.target.classList.add('active');
+            event.target.style.background = 'var(--text-primary)';
+            event.target.style.color = 'var(--white)';
+            event.target.style.borderColor = 'var(--text-primary)';
+            
+            applyFiltersAndSort();
+        }
+
+        function sortProducts() {
+            currentSort = document.getElementById('sortSelect').value;
+            applyFiltersAndSort();
+        }
+
+        function applyFiltersAndSort() {
+            let filtered = [...allProducts];
+            
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(p => p.category === currentFilter);
+            }
+            
+            if (currentSort === 'price-asc') {
+                filtered.sort((a, b) => a.price - b.price);
+            } else if (currentSort === 'price-desc') {
+                filtered.sort((a, b) => b.price - a.price);
+            } else if (currentSort === 'name-asc') {
+                filtered.sort((a, b) => a.name.localeCompare(b.name));
+            } else if (currentSort === 'name-desc') {
+                filtered.sort((a, b) => b.name.localeCompare(a.name));
+            }
+            
+            displayProducts(filtered);
+        }
+    </script>
+</body>
+</html>

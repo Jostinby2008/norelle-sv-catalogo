@@ -1,0 +1,83 @@
+[
+  {
+    "id": "pantalon-hombre-01",
+    "name": "Pantalón de Hombre",
+    "category": "Hombre",
+    "price": 15.99,
+    "image": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?q=80&w=1000&auto=format&fit=crop",
+    "description": "Pantalón elegante y cómodo para hombre.",
+    "badge": null
+  },
+  {
+    "id": "pantalon-mujer-01",
+    "name": "Pantalón de Mujer",
+    "category": "Mujer",
+    "price": 12.50,
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1000&auto=format&fit=crop",
+    "description": "Pantalón femenino con diseño moderno.",
+    "badge": null
+  },
+  {
+    "id": "camisetas-01",
+    "name": "Camisetas",
+    "category": "Unisex",
+    "price": 10.85,
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop",
+    "description": "Camisetas básicas de alta calidad.",
+    "badge": null
+  },
+  {
+    "id": "blusas-01",
+    "name": "Blusas",
+    "category": "Mujer",
+    "price": 9.99,
+    "image": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?q=80&w=1000&auto=format&fit=crop",
+    "description": "Blusas elegantes para toda ocasión.",
+    "badge": null
+  },
+  {
+    "id": "sueter-mujer-01",
+    "name": "Suéter Mujer",
+    "category": "Mujer",
+    "price": 10.99,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=1000&auto=format&fit=crop",
+    "description": "Suéter femenino cálido y elegante.",
+    "badge": null
+  },
+  {
+    "id": "sueter-hombre-01",
+    "name": "Suéter Hombre",
+    "category": "Hombre",
+    "price": 10.99,
+    "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=1000&auto=format&fit=crop",
+    "description": "Suéter masculino versátil y cómodo.",
+    "badge": null
+  },
+  {
+    "id": "chaquetas-01",
+    "name": "Chaquetas",
+    "category": "Unisex",
+    "price": 12.00,
+    "image": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=1000&auto=format&fit=crop",
+    "description": "Chaquetas modernas y atemporales.",
+    "badge": null
+  },
+  {
+    "id": "camiseta-oversize-mujer-01",
+    "name": "Camisetas Oversize Mujer",
+    "category": "Mujer",
+    "price": 8.99,
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop",
+    "description": "Camisetas oversize femeninas con estilo urbano.",
+    "badge": null
+  },
+  {
+    "id": "vestidos-01",
+    "name": "Vestidos",
+    "category": "Mujer",
+    "price": 10.50,
+    "image": "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?q=80&w=1000&auto=format&fit=crop",
+    "description": "Vestidos elegantes para ocasiones especiales.",
+    "badge": null
+  }
+]
