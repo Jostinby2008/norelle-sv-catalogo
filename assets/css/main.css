@@ -96,9 +96,9 @@ h6 { font-size: 1.1rem; }
 }
 
 .logo img {
-  height: 46px;
+  height: 44px;
   width: auto;
-  max-width: 46px;
+  max-width: 44px;
   object-fit: contain;
   display: block;
 }
@@ -122,8 +122,13 @@ h6 { font-size: 1.1rem; }
   position: relative;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: var(--accent-dusty);
+}
+
+.nav-link.active::after {
+  width: 100%;
 }
 
 .nav-link::after {

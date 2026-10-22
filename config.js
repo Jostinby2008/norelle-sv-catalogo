@@ -48,6 +48,50 @@ window.openWhatsApp = function (message) {
   return true;
 };
 
+// Construye un enlace a Gmail con destinatario, asunto y cuerpo ya redactados.
+window.buildGmailUrl = function (to, subject, body) {
+  const params = new URLSearchParams();
+  params.set('view', 'cm');
+  params.set('fs', '1');
+  params.set('to', to || window.NORELLE_CONFIG.email);
+  if (subject) { params.set('su', subject); }
+  if (body) { params.set('body', body); }
+  return 'https://mail.google.com/mail/?' + params.toString();
+};
+
+// Abre Gmail en una pestaña nueva con el mensaje listo para redactar.
+window.openGmail = function (subject, body) {
+  const url = window.buildGmailUrl(window.NORELLE_CONFIG.email, subject, body);
+  window.open(url, '_blank', 'noopener noreferrer');
+  return true;
+};
+
+// Convierte todos los enlaces mailto: en enlaces de Gmail (con el mensaje listo).
+// Se conservan el asunto y el cuerpo que ya tuviera el mailto original.
+document.addEventListener('DOMContentLoaded', function () {
+  const emailSubject = 'Consulta desde la tienda Norelle Ropa';
+  const emailBody = 'Hola Norelle,\n\nMe gustaría hacer una consulta sobre sus productos.\n\n';
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function (el) {
+    let to = window.NORELLE_CONFIG.email;
+    let subject = emailSubject;
+    let body = emailBody;
+    try {
+      const raw = el.getAttribute('href').slice('mailto:'.length);
+      const qIndex = raw.indexOf('?');
+      const addr = qIndex === -1 ? raw : raw.slice(0, qIndex);
+      if (addr) { to = addr; }
+      if (qIndex !== -1) {
+        const q = new URLSearchParams(raw.slice(qIndex + 1));
+        if (q.get('subject')) { subject = q.get('subject'); }
+        if (q.get('body')) { body = q.get('body'); }
+      }
+    } catch (e) { /* usa los valores por defecto */ }
+    el.setAttribute('href', window.buildGmailUrl(to, subject, body));
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener noreferrer');
+  });
+});
+
 // Actualiza los enlaces de WhatsApp dinámicamente si hay número.
 document.addEventListener('DOMContentLoaded', function () {
   const defaultMsg = 'Hola! Me gustaría hacer una consulta sobre sus productos';
